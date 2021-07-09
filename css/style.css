@@ -1,0 +1,167 @@
+/*GLOBALES*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1 rem = 10 px*/
+}
+body {
+  font-size: 1.6rem;
+  line-height: 2;
+}
+.centrar-texto {
+  text-align: center;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --fuenteHeading: "Roboto Slab", serif;
+  --fuenteParrafo: "Roboto", sans-serif;
+
+  --verde: #24b874;
+  --crema: #fffdea;
+  --blanco: #f8f8f8;
+  --gris: #333e3c;
+  --negro: #1e2625;
+}
+a {
+  text-decoration: none;
+  color: var(--gris);
+}
+h1 {
+  font-family: var(--fuenteHeading);
+  font-size: 2.8rem;
+}
+h2,
+p {
+  font-family: var(--fuenteParrafo);
+}
+.contenedor {
+  margin: 0 auto;
+  max-width: 120rem;
+  width: 90%;
+}
+
+/*HEADER*/
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+li {
+  list-style: none;
+  display: inline;
+  margin-left: 5rem;
+  font-family: var(--fuenteHeading);
+}
+
+.barra img {
+  height: 6.5rem;
+  width: 20rem;
+}
+a:active {
+  color: var(--verde);
+}
+/*primera seccion*/
+.contenido__principal {
+  height: 75rem; /* altura del contendio principal */
+  background-color: var(--crema);
+  background-image: url(../img/bienvenida.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.planta {
+  height: 100%; /* 100 % del tamaño del contenido principal*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+}
+.boton {
+  padding: 16px 32px;
+  border: 3px solid #24b874;
+  display: inline-block;
+  border-radius: 6px;
+  color: #24b874;
+  text-transform: uppercase;
+  transition: all 0.25 ease-in;
+  transition-property: color;
+}
+/*segunda seccion*/
+.contenido__secundario {
+  margin-top: 5rem;
+}
+.plantas__flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  font-family: var(--fuenteHeading);
+  font-size: 2rem;
+}
+.plantas__flex img {
+  height: 25rem;
+  width: 25rem;
+}
+
+/*Grupo*/
+.equipo {
+  margin-top: 10rem;
+  padding-top: 5rem;
+  background-color: var(--gris);
+  color: var(--crema);
+}
+.grupo {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding-bottom: 11rem;
+}
+.nombres {
+  color: var(--gris);
+  background-color: var(--crema);
+}
+/*Formulario*/
+.formulario {
+  padding-top: 10rem;
+  background-color: var(--blanco);
+}
+.form {
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: var(--fuenteHeading);
+}
+.form img {
+  height: 60rem;
+  width: 80rem;
+}
+input {
+  size: 50px;
+  padding: 16px 150px;
+  border: 3px solid var(--gris);
+}
+#comentario {
+  padding: 50px 150px;
+}
+
+form .boton {
+  margin-top: 3rem;
+  display: inline;
+  float: right;
+}
+/*footer*/
+
+footer {
+  background-color: var(--gris);
+  height: 20rem;
+  color: var(--crema);
+}
+
+b {
+  font-weight: 900;
+}
